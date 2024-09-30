@@ -1,5 +1,5 @@
 {
-  "name": "twilio-speech-assistant-openai-realtime-api-node",
+  "name": "speech-assistant-openai-realtime-api-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
