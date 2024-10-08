@@ -1,6 +1,6 @@
 #  Speech Assistant with Twilio Voice and the OpenAI Realtime API (Node.js)
 
-This application demonstrates how to use Node.js, [Twilio Voice]() and [Media Streams](https://www.twilio.com/docs/voice/media-streams), and [OpenAI's Realtime API](https://platform.openai.com/docs/) to make a phone call to speak with an AI Assistant. 
+This application demonstrates how to use Node.js, [Twilio Voice](https://www.twilio.com/docs/voice) and [Media Streams](https://www.twilio.com/docs/voice/media-streams), and [OpenAI's Realtime API](https://platform.openai.com/docs/) to make a phone call to speak with an AI Assistant. 
 
 The application opens websockets with the OpenAI Realtime API and Twilio, and sends voice audio from one to the other to enable a two-way conversation.
 
@@ -73,14 +73,4 @@ Once ngrok is running, dependencies are installed, Twilio is configured properly
 node index.js
 ```
 ## Test the app
-With the development server running, call the phone number you purchases in the **Prerequisites**. After the introduction, you should be able to talk to the AI Assistant. Have fun!
-
-## Special features
-
-### Have the AI speak first
-To have the AI voice assistant talk before the user, uncomment the line `// sendInitialConversationItem();`. The initial greeting is controlled in `sendInitialConversationItem`.
-
-### Interrupt handling/AI preemption
-When the user speaks and OpenAI sends `input_audio_buffer.speech_started`, the code will clear the Twilio Media Streams buffer and send OpenAI `conversation.item.truncate`.
-
-Depending on your application's needs, you may want to use the [`input_audio_buffer.speech_stopped`](https://platform.openai.com/docs/api-reference/realtime-server-events/input-audio-buffer-speech-stopped) event, instead.
+With the development server running, call the phone number you purchased in the **Prerequisites**. After the introduction, you should be able to talk to the AI Assistant. Have fun!
