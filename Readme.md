@@ -4,7 +4,7 @@ This application demonstrates how to use Node.js, [Twilio Voice](https://www.twi
 
 The application opens websockets with the OpenAI Realtime API and Twilio, and sends voice audio from one to the other to enable a two-way conversation.
 
-See [here](https://www.twilio.com/en-us/voice-ai-assistant-openai-realtime-api-node) for a tutorial overview of the code.
+See [here](https://www.twilio.com/en-us/blog/voice-ai-assistant-openai-realtime-api-node) for a tutorial overview of the code.
 
 This application uses the following Twilio products in conjuction with OpenAI's Realtime API:
 - Voice (and TwiML, Media Streams)
