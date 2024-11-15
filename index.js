@@ -184,7 +184,7 @@ fastify.register(async (fastify) => {
                     const audioDelta = {
                         event: 'media',
                         streamSid: streamSid,
-                        media: { payload: Buffer.from(response.delta, 'base64').toString('base64') }
+                        media: { payload: response.delta }
                     };
                     connection.send(JSON.stringify(audioDelta));
 
