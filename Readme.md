@@ -10,6 +10,9 @@ This application uses the following Twilio products in conjuction with OpenAI's 
 - Voice (and TwiML, Media Streams)
 - Phone Numbers
 
+> [!NOTE]
+> Outbound calling is beyond the scope of this app. However, we demoed [one way to do it here](https://www.twilio.com/en-us/blog/outbound-calls-node-openai-realtime-api-voice).
+
 ## Prerequisites
 
 To use the app, you will  need:
