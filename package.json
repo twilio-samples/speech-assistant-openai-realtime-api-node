@@ -1,13 +1,23 @@
 {
   "name": "speech-assistant-openai-realtime-api-node",
   "version": "1.0.1",
-  "description": "",
+  "description": "A Node.js real-time API for speech assistant integration using OpenAI.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests specified yet\" && exit 0"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "speech-assistant",
+    "real-time",
+    "OpenAI",
+    "API",
+    "Node.js",
+    "Fastify",
+    "WebSocket"
+  ],
+  "author": "shyamsinh <parmarshyamsingh8@gmail.com>",
   "license": "ISC",
   "type": "module",
   "dependencies": {
@@ -16,5 +26,17 @@
     "dotenv": "^16.4.5",
     "fastify": "^5.0.0",
     "ws": "^8.18.0"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssparmar8/speech-assistant-openai-realtime-api-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssparmar8/speech-assistant-openai-realtime-api-node/issues"
+  },
+  "homepage": "https://github.com/ssparmar8/speech-assistant-openai-realtime-api-node#readme"
 }
+
